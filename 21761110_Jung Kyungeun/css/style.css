@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    background-color: pink;
+    color: black;
+  }
+  
+   /* LET THE LOADING BEGIN */
+  .start-screen {
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap column;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  .loading {
+    display: flex;
+    margin: 24px 0;
+  }
+  .loading__element {
+    font-family: 'Black Han Sans', sans-serif;
+    letter-spacing: .5em;
+    font-size: 120px;
+  }
+  [class*="el"] {
+    animation: bouncing 5s infinite ease;
+  }
+  
+  
+  
+  @keyframes bouncing {
+    0%, 100% {
+      transform: scale3d(1,1,1);
+    }
+    50% {
+      transform: scale3d(0,0,1);
+    }
+  }
+  
+  
+  
+  
