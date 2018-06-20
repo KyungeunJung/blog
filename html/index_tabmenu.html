@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Tab Menu</title>
+  <!-- google fonts load. standard -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Bevan" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style_tabmenu.css"/>
+  <link rel="stylesheet" href="../index_tabmenu.html"/>
+  <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+
+</head>
+<body>
+  <div id="tab-menu" class="tab-menu">
+      <ul>
+        <li><a href="#" class="selected">Film</a></li>
+        <li><a href="#">Preview Video</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Omok?</a></li>
+      </ul>
+  </div>
+  <div class="tab-container">
+    <div class="tab-content selected">
+        <!-- TABS FRAME -->
+<section class="tabs-frame">
+    <!-- TAB 1 -->
+    <article class="tab">
+      <input type="radio" id="tab_1" class="radio" name="tab_group_1" checked  />
+      <label for="tab_1" class="tab-button"></label>
+      <section id="tab_frame_1" class="tab-frame">
+          <img src="../img/poster2.jpg">
+          <div class ="tooltip1">Treatment
+              <span class="tooltiptext1">
+                한 때 바둑왕을 꿈꿨던 바둑 영재 이바둑은 하나의 트라우마로 인해 <br>
+                현재는 기원에서 알바를 하며 잉여로운 나날을 보내고 있다. <br>
+                이바둑에게 찾아온 소확행! 오목에 오늘을 건 그녀의 전대 미문 한 판 승부!<br>
+              </span>
+          </div>
+      </section>
+    </article>
+    <!-- TAB 2 -->
+    <article class="tab">
+      <input type="radio" id="tab_2" class="radio" name="tab_group_1" />
+      <label for="tab_2" class="tab-button"></label>
+      <section id="tab_frame_2" class="tab-frame">
+            <img src="../img/poster.jpg">
+            <div class="tooltip2">Synopsis
+              <span class="tooltiptext2">
+                돌잡이 때부터 바둑알을 집어 바둑 신동으로 불린 이바둑은 <br>
+            재능의 한계를 느껴 바둑기사의 꿈을 접는다. <br>
+            기원에서 아르바이트를 하며 하릴없는 나날을 보내던 중 <br>
+            바둑은 동네 오목대회 포스터를 보고 출전을 결심한다.<br>
+            오로지 상금을 노리고 나간 오목대회에서, 오목 고수 김안경을 만나면서 <br>
+            바둑의 승부욕이 발동한다. <br><br>
+            동네에서 시작한 바둑의 오목 연마기는 전국대회로까지 확대된다. <br>
+            <오목소녀>는 마이너리그에 뛰어든 메이저리거의 열정 회복기쯤으로 요약할 수 있다. <br>
+              </span>
+            </div>
+      </section>
+
+    </article>
+    <!-- TAB 3 -->
+    <article class="tab">
+      <input type="radio" id="tab_3" class="radio" name="tab_group_1" />
+      <label for="tab_3" class="tab-button"></label>
+      <section id="tab_frame_3" class="tab-frame">
+              <img src="../img/director.png">
+              <div class ="tooltip3">Director
+                <span class="tooltiptext3">
+                  “특별한 꿈이 없거나 하고 싶은 게 없는 것도 괜찮지 않을까? <br>
+                  기성세대가 청년세대에게 꿈과 열정, ‘노력’을 강조하는 세태를 위트있게 풍자하는 영화들.<br>
+  
+                  “꿈과 열정을 가지고 도전하라” 라는 말들이 강박과 <br>
+                  같다고 생각한다. 노력하면 성공한다는 이야기는 무책임하게 들린다. <br>
+                  
+                  성장영화를 하되, 장애물을 뛰어넘거나 뭔가를 이룩하는 이야긴 하고 싶지 않았다. <br>
+                  경쟁을 부추기고 성과를 내기만 종용하는 사회에서 고민할 시간을 주고 내버려 두는 것도 필요하니까.<br> 
+                </span>
+              </div>
+
+      </section>
+    </article>
+    <!-- TAB 4 -->
+    <article class="tab">
+      <input type="radio" id="tab_4" class="radio" name="tab_group_1" />
+      <label for="tab_4" class="tab-button"></label>
+      <section id="tab_frame_4" class="tab-frame">
+          <span>
+            <p>인물관계도</p>
+              <img src="../img/connection.png">
+            </span>
+      </section>
+    </article>
+     </div>
+
+
+    <div class="tab-content">
+      
+      <div class="preview_film">
+
+      <div class="video-container">
+        <video src="../assets/omok.mp4" class="video"></video>
+        <div class="video-controls video-controls-visibility--visible">
+          <button class="control-item play-and-pause-video fa fa-play" title="Play or Pause"></button>
+          <div class="progress-video-container">
+            <input type="range" class="control-item progress-video" min="0.0" value="0.00" step="any" max="100.00">
+            <span class="progress-time time-video">00:00</span>
+            <span class="duration-time time-video">00:00</span>
+          </div>
+          <div class="audio-video-container">
+            <button class="control-item volume-video fa fa-volume-up" title="Volume"></button>
+            <input type="range" class="control-item slide-volume-video" min="0" value="1" step="any" max="1">
+          </div>
+          <button class="control-item fullscreen-video fa fa-expand"></button>
+        </div>
+      </div>
+      
+      <div class="text_container">
+          <p>
+            <a href="https://www.youtube.com/watch?v=7-QNAhA6f5E">
+                <img id="text_container_1" src="../img/maxresdefault.jpg" >
+            </a>
+          </p>
+
+          <p>
+              <a href="https://www.youtube.com/watch?v=6cobFHQx91I&list=PLZx7gIjhPM0goCy7K-7J7l-woB1CQE_CD&index=5&t=0s">
+                  <img id="text_container_2" src="../img/maxresdefault2.jpg" >
+              </a>
+          </p>
+
+          <p>
+              <a href="https://www.youtube.com/watch?v=eDe96pYkRU0">
+                  <img id="text_container_3" src="../img/maxresdefault3.jpg" >
+              </a>
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+
+    <div class="tab-content">
+        <div class="panels">
+          <div class="panel panel1">
+            <p><img src="../img/omok1.png"></p>
+            <p>김안경!</p>
+            <p>넌 끝이다</p>
+          </div>
+          <div class="panel panel2">
+            <p><img src="../img/omok2.png"></p>
+            <p>이제부터가</p>
+            <p>진짜지!</p>
+          </div>
+          <div class="panel panel3">
+            <p><img src="../img/omok3.png"></p>
+            <p>오목 져도</p>
+            <p>괜찮죠?</p>
+          </div>
+          <div class="panel panel4">
+            <p><img src="../img/omok4.png"></p>
+            <p>내기분이</p>
+            <p>너무 E마이너였어</p>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="tab-content">
+      <div id="accordion-menu" class="accordion-menu">
+        <div id="accordion-menu-1" class="menu-item">
+            <figure><img src="../img/omk.png"></figure>
+            <a href="#"><span>오목의 역사</span></a>
+            <p><span>BC 2세기경 후한 시대부터 시작됐다. <br> 1936년 도쿄오목협회가 공식적으로 렌주룰을 정립한다.<br>
+            이후, 스포츠로 거듭나게 된다. <br> 현재 오목은 세계 30여국에서 즐기고 있으며, 위상을 쌓아가고 있다.</span></p>
+            <b class="btn-close"><span>&nbsp;</span></b>
+        </div>
+        <div id="accordion-menu-2" class="menu-item">
+            <figure><img src="../img/omk2.png"></figure>
+            <a href="#"><span>오목의 용어</span></a>
+            <p><span>오목(Five) - 끊기지 않은 일련의 다섯개의 돌들 <br>
+              장목(Overline) - 끊기지 않은 일련의 여섯 이상의 돌들 <br>
+              곧은사(Straight Four) - 한개의 돌을 더 두어서 경우의 수가 둘인, 끊기지 않은 일련의 네개의 돌들</span></p>
+            <b class="btn-close"><span>&nbsp;</span></b>
+        </div>
+        <div id="accordion-menu-3" class="menu-item">
+            <figure><img src="../img/omk3.png"></figure>
+            <p><span>description</span></p>
+            <a href="#"><span>Menu 3</span></a>
+            <b class="btn-close"><span>&nbsp;</span></b>
+        </div>
+        <div id="accordion-menu-4" class="menu-item">
+            <figure><img src="../img/omk4.png"></figure>
+            <p><span>description</span></p>
+            <a href="#"><span>Menu 4</span></a>
+            <b class="btn-close"><span>&nbsp;</span></b>
+        </div>
+    </div>
+    </div>
+  </div>
+  <script src="../js/script_tabmenu.js" type="text/javascript"></script>
+  <!-- <script src ="./js/scriptforfilm.js" type="text/javascript"></script> -->
+   <script src="../js/script_gallery.js" type="text/javascript"></script> 
+   <script src="../js/omok_script.js" type="text/javascript"></script> 
+   <script src="../js/test.js" type="text/javascript"></script> 
+   <script src="../js/thelast.js" type="text/javascript"></script> 
+  <!--갤러리 자바스크립트 구현에서 충돌이 일어나는 것 같음-->
+</body>
+</html>
